@@ -5,8 +5,8 @@ categories:
 tags:
     - 工程规范
 author:
-    name: 澄怀
-    link: https://github.com/encode-studio-fe/fe-spec
+    name: luszz
+    link: https://github.com/luszz/pure
 ---
 
 # Git 规范
