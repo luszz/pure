@@ -1,4 +1,15 @@
 {
-    "cSpell.words": [],
+    "cSpell.words": [
+        "CHANGLOG",
+        "commitlint",
+        "gitpre",
+        "luszz",
+        "preinstall",
+        "rgba",
+        "stylelint",
+        "vmax",
+        "vmin",
+        "vuepress"
+    ],
     "git.ignoreLimitWarning": true
 }
