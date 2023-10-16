@@ -159,7 +159,7 @@ author:
     ```html
     <head>
      <meta charset="utf-8" />
-     <title>PURE</title>
+     <title>PURE1</title>
     </head>
     ```
 
