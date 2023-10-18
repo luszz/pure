@@ -13,7 +13,8 @@
     "deploy": "bash deploy.sh",
     "publish": "",
     "lint": "markdownlint README.md",
-    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s"
+    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s",
+    "test": "pnpm -r --filter=./packages/* run test"
   },
   "keywords": [
     "pure",

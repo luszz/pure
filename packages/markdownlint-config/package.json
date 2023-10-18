@@ -9,8 +9,16 @@
     "lint"
   ],
   "author": "luszz",
+  "homepage": "https://github.com/luszz/pure#readme",
   "license": "ISC",
   "peerDependencies": {
     "markdownlint": "^0.28.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/luszz/pure.git"
+  },
+  "bugs": {
+    "url": "https://github.com/luszz/pure/issues"
   }
 }
