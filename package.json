@@ -2,6 +2,7 @@
   "name": "pure",
   "private": true,
   "description": "前端编码规范工程化",
+  "homepage": "https://luszz.github.io/pure/",
   "scripts": {
     "preinstall": "npx only-allow pnpm",
     "prepare": "husky install",
