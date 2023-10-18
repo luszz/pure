@@ -74,6 +74,15 @@ export default defineConfig4CustomTheme({
 					},
 				],
 			},
+			{
+				text: 'NPM包',
+				items: [
+				  { text: 'pure-eslint-config', link: '/npm/eslint.md' },
+				  { text: 'pure-stylelint-config', link: '/npm/stylelint.md' },
+				  { text: 'pure-commitlint-config', link: '/npm/commitlint.md' },
+				  { text: 'pure-markdownlint-config', link: '/npm/markdownlint.md' },
+				],
+			  },
 		],
 		logo: '/img/logo.png',
 		repo: 'luszz/pure',
