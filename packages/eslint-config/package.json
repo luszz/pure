@@ -1,7 +1,7 @@
 
 {
     "name": "pure-eslint-config",
-    "version": "0.0.5",
+    "version": "0.0.0",
     "main": "index.js",
     "description": "JavaScript TypeScript Node 规范",
     "keywords": [
