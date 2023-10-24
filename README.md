@@ -42,9 +42,9 @@
 | 文档规范                                                          | [markdownlint](https://github.com/DavidAnson/markdownlint)     | [pure-markdownlint-config](https://www.npmjs.com/package/pure-markdownlint-config) |
 | Eslint 插件                                                       | [ESlint Plugin](https://eslint.org/docs/latest/extend/plugins) | [pure-eslint-plugin](https://www.npmjs.com/package/pure-eslint-plugin)             |
 
-[pure-lint](https://www.npmjs.com/package/pure-lint) 收敛屏蔽了上述依赖和配置细节，提供简单的 `CLI` 和 `Node.js API`，让项目能够一键接入、一键扫描、一键修复、一键升级，并为项目配置 git commit 卡口，降低项目接入规范的成本。
+[pure-lint-cli](https://www.npmjs.com/package/pure-lint-cli) 收敛屏蔽了上述依赖和配置细节，提供简单的 `CLI` 和 `Node.js API`，让项目能够一键接入、一键扫描、一键修复、一键升级，并为项目配置 git commit 卡口，降低项目接入规范的成本。
 
-您可以使用[pure-lint](https://www.npmjs.com/package/pure-lint) 方便地为项目接入全部规范。
+您可以使用[pure-lint-cli](https://www.npmjs.com/package/pure-lint-cli) 方便地为项目接入全部规范。
 
 ## 其他
 

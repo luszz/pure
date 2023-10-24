@@ -42,7 +42,7 @@ export default defineConfig4CustomTheme({
       },
       {
         text: '脚手架',
-        items: [{ text: 'pure-lint', link: '/cli/pure-lint.md' }],
+        items: [{ text: 'pure-lint-cli', link: '/cli/pure-lint-cli.md' }],
       },
     ],
     sidebar: [
@@ -100,7 +100,7 @@ export default defineConfig4CustomTheme({
       },
       {
         title: '脚手架',
-        children: [{ title: 'pure-lint', path: '/cli/pure-lint.md' }],
+        children: [{ title: 'pure-lint-cli', path: '/cli/pure-lint-cli.md' }],
       },
     ],
     logo: '/img/logo.png',
