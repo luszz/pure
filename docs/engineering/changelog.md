@@ -6,7 +6,7 @@ tags:
     - 工程规范
 author:
     name: 澄怀
-    link: https://github.com/encode-studio-fe/fe-spec
+    link: https://github.com/luszz/pure
 ---
 
 # CHANGELOG 规范

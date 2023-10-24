@@ -2,7 +2,7 @@
   "name": "pure-markdownlint-config",
   "version": "0.0.0",
   "description": "文档规范",
-  "main": "index.js",
+  "main": "index.json",
   "keywords": [
     "pure",
     "markdown",

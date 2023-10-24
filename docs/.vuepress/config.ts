@@ -4,7 +4,7 @@ export default defineConfig4CustomTheme({
   locales: {
     '/': {
       lang: 'zh-CN',
-      title: 'PURE',
+      title: 'pure',
       description: '前端编码规范工程化',
     },
   },
@@ -37,7 +37,12 @@ export default defineConfig4CustomTheme({
           { text: 'pure-stylelint-config', link: '/npm/stylelint.md' },
           { text: 'pure-commitlint-config', link: '/npm/commitlint.md' },
           { text: 'pure-markdownlint-config', link: '/npm/markdownlint.md' },
+          { text: 'pure-eslint-plugin', link: '/npm/eslint-plugin.md' },
         ],
+      },
+      {
+        text: '脚手架',
+        items: [{ text: 'pure-lint', link: '/cli/pure-lint.md' }],
       },
     ],
     sidebar: [
@@ -90,7 +95,12 @@ export default defineConfig4CustomTheme({
           { title: 'pure-stylelint-config', path: '/npm/stylelint.md' },
           { title: 'pure-commitlint-config', path: '/npm/commitlint.md' },
           { title: 'pure-markdownlint-config', path: '/npm/markdownlint.md' },
+          { title: 'pure-eslint-plugin', path: '/npm/eslint-plugin.md' },
         ],
+      },
+      {
+        title: '脚手架',
+        children: [{ title: 'pure-lint', path: '/cli/pure-lint.md' }],
       },
     ],
     logo: '/img/logo.png',
@@ -100,7 +110,7 @@ export default defineConfig4CustomTheme({
     footer: {
       createYear: 2023,
       copyrightInfo:
-        'pure | <a href="https://github.com/luszz/pure" target="_blank">github</a>',
+        'pure lint | <a href="https://github.com/luszz/pure" target="_blank">github</a>',
     },
 
     extendFrontmatter: {

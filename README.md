@@ -1,17 +1,16 @@
-
 # pure
 
 前端编码规范工程化
 
 ## :mountain: 能力支持
 
-### 1. 完善的规范生态
+### 1. 全面的前端生态
+
+支持前端全部生态，无需关注环境，支持直接使用
+
+### 2. 完善的规范配件
 
 支持对全部前端配置实现一键接入、一键扫描、一键修复、一键升级
-
-### 2. 支持 `Typescript`
-
-提供完整的类型注释，帮助您从 0~1 掌握完整的前端规范化
 
 ### 3. 完整的测试用例
 
@@ -30,3 +29,46 @@
 3. 学习如何通过脚手架的方式，以交互式形式一键接入，实现对`JavaScript`、`Typescript`、`React`、`Vue`等不同类型的前端项目下的标准的语法限制；
 4. 学习如何对存量项目进行优化：对于存量代码不符合规范的问题，支持一键扫描和一键修复，一键式的修复存量问题，最小化存量代码的更新成本；
 5. 学习如何对新项目添加规范：支持一键接入新增项目，通过结合`gitpre-commit`钩子，对提交文件进行编码规范的扫描；同时通过`husky`的`commit-msg`钩子，对本次代码提交`message`的格式进行扫描。
+
+## :couch_and_lamp: 配套工具
+
+我们引入了多个业界流行的 `Linter` 作为规范文档的配套工具，并根据规范内容定制了对应的规则包，它们包括：
+
+| 规范                                                              | Lint 工具                                                      | npm 包                                                                                       |
+| ----------------------------------------------------------------- | -------------------------------------------------------------- | -------------------------------------------------------------------------------------------- |
+| JavaScript 编码规范 <br/> TypeScript 编码规范 <br/> Node 编码规范 | [ESLint](https://eslint.org/)                                  | [pure-eslint-config](https://www.npmjs.com/package/pure-eslint-config)             |
+| CSS 编码规范                                                      | [stylelint](https://stylelint.io/)                             | [pure-stylelint-config](https://www.npmjs.com/package/pure-stylelint-config)       |
+| Git 规范                                                          | [commitlint](https://commitlint.js.org/#/)                     | [pure-commitlint-config](https://www.npmjs.com/package/pure-commitlint-config)     |
+| 文档规范                                                          | [markdownlint](https://github.com/DavidAnson/markdownlint)     | [pure-markdownlint-config](https://www.npmjs.com/package/pure-markdownlint-config) |
+| Eslint 插件                                                       | [ESlint Plugin](https://eslint.org/docs/latest/extend/plugins) | [pure-eslint-plugin](https://www.npmjs.com/package/pure-eslint-plugin)             |
+
+[pure-lint](https://www.npmjs.com/package/pure-lint) 收敛屏蔽了上述依赖和配置细节，提供简单的 `CLI` 和 `Node.js API`，让项目能够一键接入、一键扫描、一键修复、一键升级，并为项目配置 git commit 卡口，降低项目接入规范的成本。
+
+您可以使用[pure-lint](https://www.npmjs.com/package/pure-lint) 方便地为项目接入全部规范。
+
+## 其他
+
+## 测试`markdown config`
+
+全局安装`markdownlint-cli`
+
+```bash
+npm i -g markdownlint-cli
+pnpm run lint
+```
+
+### 生成`CHANGELOG`
+
+参考[conventional-changelog-cli](https://www.npmjs.com/package/conventional-changelog-cli)，全局安装`conventional-changelog-cli`：
+
+```bash
+npm install -g conventional-changelog-cli
+pnpm run changelog
+```
+
+## :email: 联系
+
+- **前端编码规范工程化** <https://luszz.github.io/pure/>
+- **GitHub**: <https://github.com/luszz/pure>
+
+</br>
