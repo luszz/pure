@@ -8,11 +8,11 @@
     "prepare": "husky install",
     "init": "pnpm install",
     "clean": "rimraf packages/*/node_modules && rimraf node_modules",
-    "build": "",
     "docs:dev": "vuepress dev docs",
     "docs:build": "vuepress build docs",
     "deploy": "bash deploy.sh",
-    "publish": "",
+    "pub": "pnpm -r --filter=./packages/* publish",
+    "pub:beta": "pnpm -r --filter=./packages/* publish --tag beta",
     "lint": "markdownlint README.md",
     "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s",
     "test": "pnpm -r --filter=./packages/* run test"
