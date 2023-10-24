@@ -1,6 +1,6 @@
 {
   "name": "pure-commitlint-config",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Git规范",
   "main": "index.js",
   "keywords": [
