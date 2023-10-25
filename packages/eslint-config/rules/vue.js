@@ -1,11 +1,3 @@
-/*
- * @Author: luszz11 luszz11@163.com
- * @Date: 2023-10-18 13:53:16
- * @LastEditors: luszz11 luszz11@163.com
- * @LastEditTime: 2023-10-18 13:56:05
- * @FilePath: \pure\packages\eslint-config\rules\vue.js
- * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
- */
 /**
  * 本文件的规则由 eslint-plugin-vue 提供，使用 vue-eslint-parser 作为 parser
  * @link https://eslint.vuejs.org/rules/
@@ -19,7 +11,7 @@ module.exports = {
     // eslint-disable，eslint-enable，eslint-disable-line，eslint-disable-next-line
     'vue/comment-directive': 'error',
 
-    // 本条是对JS规约 no-unused-vars 的补充，防止变量被错误地标记为未使用
+    // 本条是对JS规范 no-unused-vars 的补充，防止变量被错误地标记为未使用
     'vue/jsx-uses-vars': 'error',
 
     // 组件的 data 必须是一个函数
@@ -48,10 +40,13 @@ module.exports = {
 
     // 禁止出现语法错误
     // @link https://html.spec.whatwg.org/multipage/parsing.html#parse-errors
-    'vue/no-parsing-error': ['error', {
-      'x-invalid-end-tag': false,
-      'invalid-first-character-of-tag-name': false,
-    }],
+    'vue/no-parsing-error': [
+      'error',
+      {
+        'x-invalid-end-tag': false,
+        'invalid-first-character-of-tag-name': false,
+      },
+    ],
 
     // 禁止使用 vue 中的关键字
     'vue/no-reserved-keys': 'error',
@@ -99,4 +94,3 @@ module.exports = {
     'vue/valid-v-show': 'error',
   },
 };
-

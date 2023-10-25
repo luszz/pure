@@ -1,6 +1,6 @@
 # pure-eslint-config
 
-> JavaScript TypeScript Node 规范
+> pure JavaScript TypeScript Node 规范
 
 提供了多套配置文件以支持 `JavaScript`、`TypeScript`、`React`、`Vue`、`Node.js` 等多种项目类型。
 

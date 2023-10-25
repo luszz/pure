@@ -120,7 +120,7 @@ npm install pure-lint-cli --save
 示例：
 
 ```js
-(await encode) -
+(await pure) -
   fe -
   lint.init({
     eslintType: 'react',
