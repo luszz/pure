@@ -1,6 +1,6 @@
 {
   "name": "pure-lint-cli",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "前端编码规范工程化脚手架",
   "bin": "./lib/cli.js",
   "main": "./lib/index.js",
