@@ -1,6 +1,6 @@
 'use strict';
 
-const rule = require('../../rules/np-http-url');
+const rule = require('../../rules/no-http-url');
 const { RuleTester } = require('eslint');
 
 const ruleTester = new RuleTester();

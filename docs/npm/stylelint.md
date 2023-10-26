@@ -12,7 +12,7 @@ author:
 # pure-stylelint-config
 
 :::tip
-CSS 规范
+pure CSS 规范
 :::
 
 支持配套的 [stylelint 可共享配置](https://stylelint.io/user-guide/configure)。

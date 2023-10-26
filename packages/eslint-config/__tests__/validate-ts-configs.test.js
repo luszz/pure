@@ -222,35 +222,36 @@ describe('Validate TS configs', () => {
     assert.equal(errorReportedByReactPluginBlackList.length, 0);
   });
 
-  // it('Validate pure-eslint-config/typescript/node', async () => {
-  //   const configPath = './typescript/node.js';
-  //   const filePath = path.join(__dirname, './fixtures/ts-node.ts');
-  //   const cli = new eslint.ESLint({
-  //     overrideConfigFile: configPath,
-  //     useEslintrc: false,
-  //     ignore: false,
-  //   });
+  it('Validate pure-eslint-config/typescript/node', async () => {
+    const configPath = './typescript/node.js';
+    const filePath = path.join(__dirname, './fixtures/ts-node.ts');
 
-  //   // 验证导出的 config 是否正常
-  //   const config = await cli.calculateConfigForFile(filePath);
-  //   assert.ok(isObject(config));
-  //   assert.strictEqual(config.env.node, true);
-  //   assert.strictEqual(config.plugins.includes('node'), true);
+    const cli = new eslint.ESLint({
+      overrideConfigFile: configPath,
+      useEslintrc: false,
+      ignore: false,
+    });
 
-  //   // 验证已开启的 link 规则是否校验正常
-  //   const results = await cli.lintFiles([filePath]);
-  //   const { messages, errorCount, warningCount } = results[0];
-  //   const ruleIds = Array.from(messages.map((item) => item.ruleId));
-  //   assert.strictEqual(ruleIds.includes('node/prefer-promises/fs'), true);
-  //   assert.strictEqual(ruleIds.includes('@typescript-eslint/no-unused-vars'), true);
-  //   assert.strictEqual(ruleIds.includes('no-console'), true);
-  //   assert.strictEqual(ruleIds.includes('no-var'), true);
-  //   assert.strictEqual(ruleIds.includes('eol-last'), true);
-  //   assert.equal(errorCount, 2);
-  //   assert.equal(warningCount, 3);
+    // 验证导出的 config 是否正常
+    const config = await cli.calculateConfigForFile(filePath);
+    assert.ok(isObject(config));
+    assert.strictEqual(config.env.node, true);
+    assert.strictEqual(config.plugins.includes('node'), true);
 
-  //   // 验证已关闭的 link 规则是否校验正常，以 @typescript-eslint/explicit-function-return-type 为例
-  // assert.strictEqual(ruleIds.includes('@typescript-eslint/explicit-function-return-type'),
-  // false);
-  // });
+    // 验证已开启的 link 规则是否校验正常
+    const results = await cli.lintFiles([filePath]);
+    const { messages, errorCount, warningCount } = results[0];
+    const ruleIds = Array.from(messages.map((item) => item.ruleId));
+
+    assert.strictEqual(ruleIds.includes('node/prefer-promises/fs'), true);
+    assert.strictEqual(ruleIds.includes('@typescript-eslint/no-unused-vars'), true);
+    assert.strictEqual(ruleIds.includes('no-console'), true);
+    assert.strictEqual(ruleIds.includes('no-var'), true);
+    assert.strictEqual(ruleIds.includes('eol-last'), true);
+    assert.equal(errorCount, 2);
+    assert.equal(warningCount, 3);
+
+    // 验证已关闭的 link 规则是否校验正常，以 @typescript-eslint/explicit-function-return-type 为例
+    assert.strictEqual(ruleIds.includes('@typescript-eslint/explicit-function-return-type'), false);
+  });
 });

@@ -1,6 +1,6 @@
 ---
 home: true
-heroText: PURE
+heroText: pure
 tagline: 前端编码规范工程化
 actionText: 立刻进入 →
 actionLink: /coding/html.md
@@ -24,6 +24,8 @@ features:
 
 ## :bulb: 为什要学习前端工程化
 
+通过本套课程，您可以学会：
+
 1. 学习如何通过 `monorepo` 和 `pnpm` 的多包管理方式开发一套多 `npm` 包的管理方式，以及如何将发包流程植入 `CI` 实现自动化发布，以及`CHANGLOG`的自动化更新部署；
 2. 学习现有前端前沿的研发流程下，我们可以通过哪些工具提升项目的编码规范，并提供配套工具的最佳实践，包括但不限于`eslint`、`stylelint`、`commitlint`、`markdownlint`、`husky`等，以及如何将单元测试植入配套工具的具体实现；
 3. 学习如何通过脚手架的方式，以交互式形式一键接入，实现对`JavaScript`、`Typescript`、`React`、`Vue`等不同类型的前端项目下的标准的语法限制；
@@ -38,11 +40,11 @@ features:
 
 | 规范                                                              | Lint 工具                                                      | NPM 包                                                                                       |
 | ----------------------------------------------------------------- | -------------------------------------------------------------- | -------------------------------------------------------------------------------------------- |
-| JavaScript 编码规范 <br/> TypeScript 编码规范 <br/> Node 编码规范 | [ESLint](https://eslint.org/)                                  | [pure-eslint-config](https://www.npmjs.com/package/pure-eslint-config)             |
+| JavaScript 编码规范 <br/> TypeScript 编码规范 <br/> Node 编码规范 | [ESLint](https://eslint.org/)                                  | [pure-eslint-config](https://www.npmjs.com/package/pure-eslint-config)                   |
 | CSS 编码规范                                                      | [stylelint](https://stylelint.io/)                             | [pure-stylelint-config](https://www.npmjs.com/package/pure-stylelint-config)       |
 | Git 规范                                                          | [commitlint](https://commitlint.js.org/#/)                     | [pure-commitlint-config](https://www.npmjs.com/package/pure-commitlint-config)     |
 | 文档规范                                                          | [markdownlint](https://github.com/DavidAnson/markdownlint)     | [pure-markdownlint-config](https://www.npmjs.com/package/pure-markdownlint-config) |
-| Eslint 插件                                                       | [ESlint Plugin](https://eslint.org/docs/latest/extend/plugins) | [pure-eslint-plugin](https://www.npmjs.com/package/pure-eslint-plugin)             |
+| Eslint 插件                                                       | [ESlint Plugin](https://eslint.org/docs/latest/extend/plugins) | [pure-eslint-plugin](https://www.npmjs.com/package/pure-eslint-plugin)                   |
 
 [pure-lint-cli](https://www.npmjs.com/package/pure-lint-cli) 收敛屏蔽了上述依赖和配置细节，提供简单的 `CLI` 和 `Node.js API`，让项目能够一键接入、一键扫描、一键修复、一键升级，并为项目配置 git commit 卡口，降低项目接入规范的成本。
 

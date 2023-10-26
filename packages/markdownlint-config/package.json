@@ -1,24 +1,23 @@
 {
   "name": "pure-markdownlint-config",
-  "version": "1.0.1",
-  "description": "文档规范",
+  "version": "1.0.2",
   "main": "index.json",
+  "description": "pure 文档规范",
   "keywords": [
-    "pure",
     "markdown",
     "lint"
   ],
   "author": "luszz",
   "homepage": "https://github.com/luszz/pure#readme",
   "license": "ISC",
-  "peerDependencies": {
-    "markdownlint": "^0.28.1"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/luszz/pure.git"
   },
   "bugs": {
     "url": "https://github.com/luszz/pure/issues"
+  },
+  "peerDependencies": {
+    "markdownlint": "^0.28.1"
   }
 }

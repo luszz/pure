@@ -1,8 +1,8 @@
 const path = require('path');
 const fs = require('fs-extra');
-const pureLint = require('../lib/index');
+const pureFeLint = require('../lib/index');
 
-const { init } = pureLint;
+const { init } = pureFeLint;
 
 describe('init', () => {
   const templatePath = path.resolve(__dirname, './fixtures/template/init');

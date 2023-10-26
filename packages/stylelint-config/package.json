@@ -1,18 +1,16 @@
 {
-"name": "pure-stylelint-config",
-"version": "1.0.2",
-"description": "CSS规范",
-"main": "index.js",
-"keywords": [
-  "pure",
-  "style",
-  "lint"
-],
-
-"scripts": {
+  "name": "pure-stylelint-config",
+  "version": "1.0.0",
+  "description": "pure CSS规范",
+  "main": "index.js",
+  "keywords": [
+    "style",
+    "lint"
+  ],
+  "scripts": {
     "test": "jest"
   },
-  "author": "luszz11",
+  "author": "luszz",
   "homepage": "https://github.com/luszz/pure#readme",
   "license": "ISC",
   "peerDependencies": {

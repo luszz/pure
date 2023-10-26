@@ -1,8 +1,8 @@
 import fs from 'fs-extra';
 import path from 'path';
-import { PKG_NAME } from '../utils/constants';
+import { doESLint, doMarkdownlint, doPrettier, doStylelint } from '../lints';
 import type { Config, PKG, ScanOptions, ScanReport, ScanResult } from '../types';
-import { doPrettier, doESLint, doStylelint, doMarkdownlint } from '../lints';
+import { PKG_NAME } from '../utils/constants';
 
 export default async (options: ScanOptions): Promise<ScanReport> => {
   const { cwd, fix, outputReport, config: scanConfig } = options;
@@ -11,18 +11,17 @@ export default async (options: ScanOptions): Promise<ScanReport> => {
     const localPath = path.resolve(cwd, pth);
     return fs.existsSync(localPath) ? require(localPath) : {};
   };
-
   const pkg: PKG = readConfigFile('package.json');
   const config: Config = scanConfig || readConfigFile(`${PKG_NAME}.config.js`);
   const runErrors: Error[] = [];
   let results: ScanResult[] = [];
 
-    // prettier
-    if (fix && config.enablePrettier !== false) {
-      await doPrettier(options);
-    }
+  // prettier
+  if (fix && config.enablePrettier !== false) {
+    await doPrettier(options);
+  }
 
-      // eslint
+  // eslint
   if (config.enableESLint !== false) {
     try {
       const eslintResults = await doESLint({ ...options, pkg, config });
@@ -32,7 +31,6 @@ export default async (options: ScanOptions): Promise<ScanReport> => {
     }
   }
 
-  
   // stylelint
   if (config.enableStylelint !== false) {
     try {
@@ -42,19 +40,18 @@ export default async (options: ScanOptions): Promise<ScanReport> => {
       runErrors.push(e);
     }
   }
-  
 
-    // markdown
-    if (config.enableMarkdownlint !== false) {
-      try {
-        const markdownlintResults = await doMarkdownlint({ ...options, pkg, config });
-        results = results.concat(markdownlintResults);
-      } catch (e) {
-        runErrors.push(e);
-      }
+  // markdown
+  if (config.enableMarkdownlint !== false) {
+    try {
+      const markdownlintResults = await doMarkdownlint({ ...options, pkg, config });
+      results = results.concat(markdownlintResults);
+    } catch (e) {
+      runErrors.push(e);
     }
+  }
 
-      // 生成报告报告文件
+  // 生成报告报告文件
   if (outputReport) {
     const reportPath = path.resolve(process.cwd(), `./${PKG_NAME}-report.json`);
     fs.outputFile(reportPath, JSON.stringify(results, null, 2), () => {});
@@ -66,4 +63,4 @@ export default async (options: ScanOptions): Promise<ScanReport> => {
     warningCount: results.reduce((count, { warningCount }) => count + warningCount, 0),
     runErrors,
   };
-}
+};

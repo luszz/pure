@@ -1,24 +1,23 @@
 {
   "name": "pure-commitlint-config",
-  "version": "1.0.1",
-  "description": "Git规范",
+  "version": "1.0.2",
   "main": "index.js",
+  "description": "pure Git规范",
   "keywords": [
-    "pure",
     "commit",
     "lint"
   ],
   "author": "luszz",
   "homepage": "https://github.com/luszz/pure#readme",
   "license": "ISC",
-  "dependencies": {
-    "conventional-changelog-conventionalcommits": "^4.5.0"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/luszz/pure.git"
   },
   "bugs": {
     "url": "https://github.com/luszz/pure/issues"
+  },
+  "dependencies": {
+    "conventional-changelog-conventionalcommits": "^4.5.0"
   }
 }

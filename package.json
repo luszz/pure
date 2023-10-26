@@ -2,31 +2,28 @@
   "name": "pure",
   "private": true,
   "description": "前端编码规范工程化",
-  "homepage": "https://luszz.github.io/pure/",
   "scripts": {
     "preinstall": "npx only-allow pnpm",
     "prepare": "husky install",
     "init": "pnpm install",
     "clean": "rimraf packages/*/node_modules && rimraf node_modules",
+    "test": "pnpm -r --filter=./packages/* run test",
     "docs:dev": "vuepress dev docs",
     "docs:build": "vuepress build docs",
     "deploy": "bash deploy.sh",
     "pub": "pnpm -r --filter=./packages/* publish",
     "pub:beta": "pnpm -r --filter=./packages/* publish --tag beta",
     "lint": "markdownlint README.md",
-    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s",
-    "test": "pnpm -r --filter=./packages/* run test"
+    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s"
   },
   "keywords": [
-    "pure",
-    "fe spec"
+    "pure"
   ],
   "author": "luszz",
   "license": "ISC",
   "devDependencies": {
     "@commitlint/cli": "^17.6.1",
     "husky": "^8.0.3",
-    "lerna": "^6.6.2",
     "markdownlint": "^0.28.1",
     "pnpm": "^8.6.0",
     "rimraf": "^3.0.2",

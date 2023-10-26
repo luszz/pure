@@ -110,7 +110,7 @@ export default defineConfig4CustomTheme({
     footer: {
       createYear: 2023,
       copyrightInfo:
-        'pure lint | <a href="https://github.com/luszz/pure" target="_blank">github</a>',
+        'pure | <a href="https://github.com/luszz/pure" target="_blank">github</a>',
     },
 
     extendFrontmatter: {
