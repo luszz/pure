@@ -1,6 +1,6 @@
 {
   "name": "pure-stylelint-config",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "pure CSS规范",
   "main": "index.js",
   "keywords": [

@@ -1,6 +1,6 @@
 {
   "name": "pure-markdownlint-config",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "main": "index.json",
   "description": "pure 文档规范",
   "keywords": [
