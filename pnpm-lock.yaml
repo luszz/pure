@@ -239,17 +239,17 @@ importers:
         specifier: ^2.2.1
         version: 2.8.8
       pure-commitlint-config:
-        specifier: ^1.0.0
+        specifier: ^1.0.2
         version: link:../commitlint-config
       pure-eslint-config:
-        specifier: ^1.0.1
+        specifier: ^1.0.2
         version: link:../eslint-config
       pure-markdownlint-config:
-        specifier: ^1.0.0
+        specifier: ^1.0.2
         version: link:../markdownlint-config
       pure-stylelint-config:
-        specifier: ^1.0.0
-        version: 1.0.2(stylelint-scss@4.7.0)(stylelint@14.16.1)
+        specifier: ^1.0.2
+        version: link:../stylelint-config
       strip-ansi:
         specifier: ^6.0.0
         version: 6.0.1
@@ -12789,16 +12789,6 @@ packages:
   /pure-rand@6.0.4:
     resolution: {integrity: sha512-LA0Y9kxMYv47GIPJy6MI84fqTd2HmYZI83W/kM/SkKfDlajnZYfmXFTxkbY+xSBPkLJxltMa9hIkmdc29eguMA==}
     dev: true
-
-  /pure-stylelint-config@1.0.2(stylelint-scss@4.7.0)(stylelint@14.16.1):
-    resolution: {integrity: sha512-qYtOXlyxw05IO9SMvA/uBT32WebQTngthAzys0kTkAgMJqCGDco3MdbmrqLMGQTifmFO4os41iifEl2nUlFlUg==}
-    peerDependencies:
-      stylelint: '>=8.3.0'
-      stylelint-scss: '>=2.0.0'
-    dependencies:
-      stylelint: 14.16.1
-      stylelint-scss: 4.7.0(stylelint@14.16.1)
-    dev: false
 
   /q@1.5.1:
     resolution: {integrity: sha512-kV/CThkXo6xyFEZUugw/+pIOywXcDbFYgSct5cT3gqlbkBE1SJdwy6UQoZvodiWF/ckQLZyDE/Bu1M6gVu5lVw==}
