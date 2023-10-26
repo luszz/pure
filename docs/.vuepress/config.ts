@@ -33,11 +33,11 @@ export default defineConfig4CustomTheme({
       {
         text: 'NPM包',
         items: [
-          { text: 'pure-eslint-config', link: '/npm/eslint.md' },
+          { text: 'eslint-config-luszz', link: '/npm/eslint.md' },
           { text: 'pure-stylelint-config', link: '/npm/stylelint.md' },
           { text: 'pure-commitlint-config', link: '/npm/commitlint.md' },
           { text: 'pure-markdownlint-config', link: '/npm/markdownlint.md' },
-          { text: 'pure-eslint-plugin', link: '/npm/eslint-plugin.md' },
+          { text: 'eslint-plugin-luszz', link: '/npm/eslint-plugin.md' },
         ],
       },
       {
@@ -91,11 +91,11 @@ export default defineConfig4CustomTheme({
       {
         title: 'NPM包',
         children: [
-          { title: 'pure-eslint-config', path: '/npm/eslint.md' },
+          { title: 'eslint-config-luszz', path: '/npm/eslint.md' },
           { title: 'pure-stylelint-config', path: '/npm/stylelint.md' },
           { title: 'pure-commitlint-config', path: '/npm/commitlint.md' },
           { title: 'pure-markdownlint-config', path: '/npm/markdownlint.md' },
-          { title: 'pure-eslint-plugin', path: '/npm/eslint-plugin.md' },
+          { title: 'eslint-plugin-luszz', path: '/npm/eslint-plugin.md' },
         ],
       },
       {

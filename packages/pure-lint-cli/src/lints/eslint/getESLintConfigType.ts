@@ -5,10 +5,10 @@ import type { PKG } from '../../types';
  * 获取 ESLint 配置类型
  * @param cwd
  * @param pkg
- * @returns pure-eslint-config/index
- * @returns pure-eslint-config/react
- * @returns pure-eslint-config/typescript/index
- * @returns pure-eslint-config/typescript/react
+ * @returns eslint-config-luszz/index
+ * @returns eslint-config-luszz/react
+ * @returns eslint-config-luszz/typescript/index
+ * @returns eslint-config-luszz/typescript/react
  */
 export function getESLintConfigType(cwd: string, pkg: PKG): string {
   const tsFiles = glob.sync('./!(node_modules)/**/*.@(ts|tsx)', { cwd });
@@ -28,6 +28,6 @@ export function getESLintConfigType(cwd: string, pkg: PKG): string {
   }
 
   return (
-    'pure-eslint-config/' + `${language}/${dsl}`.replace(/\/$/, '/index').replace(/^\//, '')
+    'eslint-config-luszz/' + `${language}/${dsl}`.replace(/\/$/, '/index').replace(/^\//, '')
   );
 }

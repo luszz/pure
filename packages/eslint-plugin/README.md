@@ -1,11 +1,11 @@
-# pure-eslint-plugin
+# eslint-plugin-luszz
 
 ## 安装
 
 除了本包，你需要同时安装 [ESlint](https://eslint.org/)
 
 ```shell
-$ npm install pure-eslint-plugin eslint --save-dev
+$ npm install eslint-plugin-luszz eslint --save-dev
 ```
 
 ## 使用
@@ -15,9 +15,9 @@ $ npm install pure-eslint-plugin eslint --save-dev
 ```js
 // .eslintrc.js
 module.exports = {
-  plugin: ['pure-eslint-config'],
+  plugin: ['eslint-config-luszz'],
   rules: {
-    'pure-eslint-plugin/no-secret-info': 'error',
+    'eslint-plugin-luszz/no-secret-info': 'error',
   },
 };
 ```
@@ -27,7 +27,7 @@ module.exports = {
 ```js
 // .eslintrc.js
 module.exports = {
-  extends: 'plugin:pure-eslint-plugin/recommended',
+  extends: 'plugin:eslint-plugin-luszz/recommended',
 };
 ```
 

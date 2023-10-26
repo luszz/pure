@@ -38,11 +38,11 @@ pure 前端编码规范工程化
 
 | 规范                                                              | Lint 工具                                                      | npm 包                                                                                       |
 | ----------------------------------------------------------------- | -------------------------------------------------------------- | -------------------------------------------------------------------------------------------- |
-| JavaScript 编码规范 <br/> TypeScript 编码规范 <br/> Node 编码规范 | [ESLint](https://eslint.org/)                                  | [pure-eslint-config](https://www.npmjs.com/package/pure-eslint-config)                   |
+| JavaScript 编码规范 <br/> TypeScript 编码规范 <br/> Node 编码规范 | [ESLint](https://eslint.org/)                                  | [eslint-config-luszz](https://www.npmjs.com/package/eslint-config-luszz)                   |
 | CSS 编码规范                                                      | [stylelint](https://stylelint.io/)                             | [pure-stylelint-config](https://www.npmjs.com/package/pure-stylelint-config)       |
 | Git 规范                                                          | [commitlint](https://commitlint.js.org/#/)                     | [pure-commitlint-config](https://www.npmjs.com/package/pure-commitlint-config)     |
 | 文档规范                                                          | [markdownlint](https://github.com/DavidAnson/markdownlint)     | [pure-markdownlint-config](https://www.npmjs.com/package/pure-markdownlint-config) |
-| Eslint 插件                                                       | [ESlint Plugin](https://eslint.org/docs/latest/extend/plugins) | [pure-eslint-plugin](https://www.npmjs.com/package/pure-eslint-plugin)                   |
+| Eslint 插件                                                       | [ESlint Plugin](https://eslint.org/docs/latest/extend/plugins) | [eslint-plugin-luszz](https://www.npmjs.com/package/eslint-plugin-luszz)                   |
 
 [pure-lint-cli](https://www.npmjs.com/package/pure-lint-cli) 收敛屏蔽了上述依赖和配置细节，提供简单的 `CLI` 和 `Node.js API`，让项目能够一键接入、一键扫描、一键修复、一键升级，并为项目配置 git commit 卡口，降低项目接入规范的成本。
 

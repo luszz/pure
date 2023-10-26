@@ -1,5 +1,5 @@
 {
-  "name": "pure-eslint-plugin",
+  "name": "eslint-plugin-luszz",
   "version": "1.0.4",
   "description": "自定义eslint插件",
   "scripts": {

@@ -181,6 +181,9 @@ importers:
       eslint-config-egg:
         specifier: ^10.0.0
         version: 10.0.0(eslint-import-resolver-typescript@2.5.0)(eslint@8.7.0)(typescript@4.9.5)
+      eslint-config-luszz:
+        specifier: ^1.0.4
+        version: link:../eslint-config
       eslint-config-prettier:
         specifier: ^8.3.0
         version: 8.3.0(eslint@8.7.0)
@@ -242,16 +245,13 @@ importers:
         specifier: ^2.2.1
         version: 2.2.1
       pure-commitlint-config:
-        specifier: ^1.0.2
+        specifier: ^1.0.4
         version: link:../commitlint-config
-      pure-eslint-config:
-        specifier: ^1.0.2
-        version: link:../eslint-config
       pure-markdownlint-config:
-        specifier: ^1.0.2
+        specifier: ^1.0.4
         version: link:../markdownlint-config
       pure-stylelint-config:
-        specifier: ^1.0.2
+        specifier: ^1.0.4
         version: link:../stylelint-config
       strip-ansi:
         specifier: ^6.0.0

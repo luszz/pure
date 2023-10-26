@@ -1,7 +1,7 @@
 module.exports = {
-  plugins: ['pure-eslint-plugin'],
+  plugins: ['eslint-plugin-luszz'],
   rules: {
-    'pure-eslint-plugin/no-http-url': 'warn',
-    'pure-eslint-plugin/no-secret-info': 'error',
+    'eslint-plugin-luszz/no-http-url': 'warn',
+    'eslint-plugin-luszz/no-secret-info': 'error',
   },
 };
