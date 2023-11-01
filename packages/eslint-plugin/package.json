@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-luszz",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "自定义eslint插件",
   "scripts": {
     "test": "jest",
