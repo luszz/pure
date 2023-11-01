@@ -15,7 +15,7 @@ $ npm install eslint-plugin-luszz eslint --save-dev
 ```js
 // .eslintrc.js
 module.exports = {
-  plugin: ['eslint-config-luszz'],
+  plugin: ['eslint-plugin-luszz'],
   rules: {
     'eslint-plugin-luszz/no-secret-info': 'error',
   },
