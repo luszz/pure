@@ -244,7 +244,7 @@ importers:
       prettier:
         specifier: ^2.2.1
         version: 2.2.1
-      pure-commitlint-config:
+      commitlint-config-pure:
         specifier: ^1.0.4
         version: link:../commitlint-config
       pure-markdownlint-config:

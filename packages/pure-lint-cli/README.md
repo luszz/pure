@@ -11,7 +11,7 @@
 | ----------------------------------------------------------------- | ---------------------------------------------------------- | -------------------------------------------------------------------------------------------- |
 | JavaScript 编码规范 <br/> TypeScript 编码规范 <br/> Node 编码规范 | [ESLint](https://eslint.org/)                              | [eslint-config-luszz](https://www.npmjs.com/package/eslint-config-luszz)             |
 | CSS 编码规范                                                      | [stylelint](https://stylelint.io/)                         | [pure-stylelint-config](https://www.npmjs.com/package/pure-stylelint-config)       |
-| Git 规范                                                          | [commitlint](https://commitlint.js.org/#/)                 | [pure-commitlint-config](https://www.npmjs.com/package/pure-commitlint-config)     |
+| Git 规范                                                          | [commitlint](https://commitlint.js.org/#/)                 | [commitlint-config-pure](https://www.npmjs.com/package/commitlint-config-pure)     |
 | 文档规范                                                          | [markdownlint](https://github.com/DavidAnson/markdownlint) | [pure-markdownlint-config](https://www.npmjs.com/package/pure-markdownlint-config) |
 
 可以看到这些 `Linter` 和规则包众多且零散，全部安装它们会给项目增加十几个依赖，接入和升级成本都比较高。
@@ -38,11 +38,11 @@ npm install pure-lint-cli -g
 
 具体会做以下事情：
 
-- 安装各种依赖：包括 `Linter` 依赖，如 [ESLint](https://eslint.org/)、[stylelint](https://stylelint.io/)、[commitlint](https://commitlint.js.org/#/)、[markdownlint](https://github.com/DavidAnson/markdownlint) 等；配置依赖，如 [eslint-config-luszz](https://www.npmjs.com/package/eslint-config-luszz)、[pure-stylelint-config](https://www.npmjs.com/package/pure-stylelint-config)、[pure-commitlint-config](https://www.npmjs.com/package/pure-commitlint-config)、[pure-markdownlint-config](https://www.npmjs.com/package/pure-markdownlint-config) 等
+- 安装各种依赖：包括 `Linter` 依赖，如 [ESLint](https://eslint.org/)、[stylelint](https://stylelint.io/)、[commitlint](https://commitlint.js.org/#/)、[markdownlint](https://github.com/DavidAnson/markdownlint) 等；配置依赖，如 [eslint-config-luszz](https://www.npmjs.com/package/eslint-config-luszz)、[pure-stylelint-config](https://www.npmjs.com/package/pure-stylelint-config)、[commitlint-config-pure](https://www.npmjs.com/package/commitlint-config-pure)、[pure-markdownlint-config](https://www.npmjs.com/package/pure-markdownlint-config) 等
 - 写入各种配置文件，包括：
   - `.eslintrc.js`、`.eslintignore`：ESLint 配置（继承 `eslint-config-luszz`）及黑名单文件
   - `.stylelintrc.js`、`.stylelintignore`：stylelint 配置（继承 `pure-stylelint-config`）及黑名单文件
-  - `commitlint.config.js`：commitlint 配置（继承 `pure-commitlint-config`）
+  - `commitlint.config.js`：commitlint 配置（继承 `commitlint-config-pure`）
   - `.markdownlint.json`、`.markdownlintignore`：`markdownlint` 配置及黑名单文件
   - `.prettierrc.js`：符合规范的 [Prettier 配置](https://prettier.io/docs/en/configuration.html)
   - `.editorconfig`：符合规范的 [editorconfig](https://editorconfig.org/)

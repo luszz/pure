@@ -1,5 +1,5 @@
 {
-  "name": "pure-commitlint-config",
+  "name": "commitlint-config-pure",
   "version": "1.0.4",
   "main": "index.js",
   "description": "pure Git规范",

@@ -1,5 +1,5 @@
 ---
-title: pure-commitlint-config
+title: commitlint-config-pure
 categories:
   - 工程规范
 tags:
@@ -9,7 +9,7 @@ author:
   link: https://github.com/luszz/pure
 ---
 
-# pure-commitlint-config
+# commitlint-config-pure
 
 :::tip
 pure Git 规范
@@ -22,7 +22,7 @@ pure Git 规范
 使用时，需要安装 [@commitlint/cli](https://www.npmjs.com/package/@commitlint/cli)：
 
 ```bash
-npm install pure-commitlint-config @commitlint/cli --save-dev
+npm install commitlint-config-pure @commitlint/cli --save-dev
 ```
 
 ## 使用
@@ -31,7 +31,7 @@ npm install pure-commitlint-config @commitlint/cli --save-dev
 
 ```javascript
 module.exports = {
-  extends: ['pure-commitlint-config'],
+  extends: ['commitlint-config-pure'],
 };
 ```
 

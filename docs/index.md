@@ -42,7 +42,7 @@ features:
 | ----------------------------------------------------------------- | -------------------------------------------------------------- | -------------------------------------------------------------------------------------------- |
 | JavaScript 编码规范 <br/> TypeScript 编码规范 <br/> Node 编码规范 | [ESLint](https://eslint.org/)                                  | [eslint-config-luszz](https://www.npmjs.com/package/eslint-config-luszz)                   |
 | CSS 编码规范                                                      | [stylelint](https://stylelint.io/)                             | [pure-stylelint-config](https://www.npmjs.com/package/pure-stylelint-config)       |
-| Git 规范                                                          | [commitlint](https://commitlint.js.org/#/)                     | [pure-commitlint-config](https://www.npmjs.com/package/pure-commitlint-config)     |
+| Git 规范                                                          | [commitlint](https://commitlint.js.org/#/)                     | [commitlint-config-pure](https://www.npmjs.com/package/commitlint-config-pure)     |
 | 文档规范                                                          | [markdownlint](https://github.com/DavidAnson/markdownlint)     | [pure-markdownlint-config](https://www.npmjs.com/package/pure-markdownlint-config) |
 | Eslint 插件                                                       | [ESlint Plugin](https://eslint.org/docs/latest/extend/plugins) | [eslint-plugin-luszz](https://www.npmjs.com/package/eslint-plugin-luszz)                   |
 
