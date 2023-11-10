@@ -1,6 +1,6 @@
 {
   "name": "pure-lint-cli",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "前端编码规范工程化标准脚手架",
   "bin": "./lib/cli.js",
   "main": "./lib/index.js",
@@ -49,6 +49,7 @@
     "chalk": "^4.1.0",
     "command-exists": "^1.2.9",
     "commander": "^6.2.1",
+    "commitlint-config-pure": "^1.0.7",
     "cross-spawn": "^7.0.3",
     "ejs": "^3.1.5",
     "eslint": "^8.7.0",
@@ -74,7 +75,6 @@
     "markdownlint-rule-helpers": "^0.13.0",
     "ora": "^5.1.0",
     "prettier": "^2.2.1",
-    "commitlint-config-pure": "^1.0.4",
     "pure-markdownlint-config": "^1.0.4",
     "pure-stylelint-config": "^1.0.4",
     "strip-ansi": "^6.0.0",
