@@ -1,6 +1,6 @@
 {
   "name": "commitlint-config-pure",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "main": "index.js",
   "description": "pure Git规范",
   "keywords": [
@@ -19,5 +19,6 @@
   },
   "dependencies": {
     "conventional-changelog-conventionalcommits": "^4.5.0"
-  }
+  },
+  "gitHead": "683e129f33e155a086e0a165ac6a2205beeda284"
 }
