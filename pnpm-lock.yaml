@@ -170,7 +170,7 @@ importers:
         specifier: ^6.2.1
         version: 6.2.1
       commitlint-config-pure:
-        specifier: ^1.0.9
+        specifier: ^1.0.10
         version: link:../commitlint-config
       cross-spawn:
         specifier: ^7.0.3
@@ -185,7 +185,7 @@ importers:
         specifier: ^13.0.0
         version: 13.0.0(eslint-import-resolver-typescript@3.6.1)(eslint@8.53.0)(typescript@5.2.2)
       eslint-config-luszz:
-        specifier: ^1.0.5
+        specifier: ^1.0.10
         version: link:../eslint-config
       eslint-config-prettier:
         specifier: ^8.3.0
