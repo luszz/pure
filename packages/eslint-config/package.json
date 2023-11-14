@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-luszz",
-  "version": "1.0.11",
+  "version": "1.0.10",
   "main": "index.js",
   "description": "pure JavaScript TypeScript Node 规范",
   "keywords": [
