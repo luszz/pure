@@ -1,6 +1,6 @@
 {
   "name": "pure-lint-cli",
-  "version": "1.0.10",
+  "version": "1.0.11",
   "description": "前端编码规范工程化标准脚手架",
   "bin": "./lib/cli.js",
   "main": "./lib/index.js",
@@ -54,7 +54,7 @@
     "ejs": "^3.1.5",
     "eslint": "^8.53.0",
     "eslint-config-egg": "^13.0.0",
-    "eslint-config-luszz": "^1.0.10",
+    "eslint-config-luszz": "^1.0.11",
     "eslint-config-prettier": "^8.3.0",
     "eslint-import-resolver-typescript": "^3.6.1",
     "eslint-plugin-import": "^2.29.0",
