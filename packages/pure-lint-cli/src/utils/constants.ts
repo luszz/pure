@@ -58,6 +58,10 @@ export const PROJECT_TYPES: Array<{ name: string; value: string }> = [
     value: 'typescript/vue',
   },
   {
+    name: 'Vue3 项目（TypeScript）',
+    value: 'typescript/vue3',
+  },
+  {
     name: 'Node.js 项目（JavaScript）',
     value: 'node',
   },

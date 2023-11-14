@@ -56,6 +56,7 @@ describe('Validate TS configs', () => {
     assert.ok(reports2.errorCount !== 0 || reports2.warnCount !== 0);
   });
 
+
   it('Validate eslint-config-luszz/typescript/vue', async () => {
     const configPath = './typescript/vue.js';
     const filePath = path.join(__dirname, './fixtures/ts-vue.vue');
@@ -182,6 +183,7 @@ describe('Validate TS configs', () => {
     });
     assert.equal(errorReportedByReactPluginBlackList.length, 0);
   });
+
 
   it('Validate eslint-config-luszz/essential/typescript/vue', async () => {
     const configPath = './essential/typescript/vue.js';
